@@ -1,6 +1,6 @@
 # 代码一
 
-
+这一份代码没有用到sort()函数的第三个参数
 
 ```c++
 #include<bits/stdc++.h>
@@ -24,6 +24,7 @@ int main()
 
 
 # 代码二
+这一份代码使用了第三个参数，但是这里用的是lambda表达式
 
 ```c++
 #include<bits/stdc++.h>
@@ -53,6 +54,7 @@ int main()
 
 
 # 代码三
+这一份代码使用了第三个参数，但是我们只传入函数名。函数定义为全局的。
 
 ```c++
 #include<bits/stdc++.h>
