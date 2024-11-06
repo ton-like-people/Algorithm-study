@@ -50,3 +50,31 @@ int main()
 }
 ```
 
+
+
+# 代码三
+
+```c++
+#include<bits/stdc++.h>
+using namespace std;
+const int N = 5e5 + 6;
+int a[N];
+bool cmp(const int &u, const int &v){
+		return u>v;
+}
+
+int main()
+{
+    int n; cin >> n;
+    for(int i=1; i<=n; ++i) cin >> a[i];
+    
+    sort(a+1, a+1+n);
+    
+    for(int i=1; i<=n; ++i) cout << a[i] << " \n"[i == n];
+    
+    sort(a+1, a+1+n, cmp);
+    for(int i=1; i<=n; ++i) cout << a[i] << " \n"[i == n];
+    return 0;
+}
+```
+
