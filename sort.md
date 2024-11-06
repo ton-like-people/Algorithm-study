@@ -164,13 +164,13 @@ int a[N];
 
 int main()
 {
-	int n; cin >> n; 
+    int n; cin >> n; 
     for(int i = 1; i <= n; ++i) cin >> a[i];
     
     ll mx = a[1], mi = a[1];
     for(int i = 1; i <= n; ++i)
     {
-		mx = max(mx, (ll)a[i]);
+        mx = max(mx, (ll)a[i]);
         mi = min(mi, 1ll * a[i]);
     }
     cout << mx << "\n" << mi << "\n";
@@ -182,7 +182,7 @@ int main()
 }
 ```
 
-
+第三种方法就是在170行去除ll改为int，对应的173和174行也去除就行，实际上我们的成绩最大值还达不到long long 的门槛
 
 
 
